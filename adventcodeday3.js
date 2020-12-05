@@ -1,4 +1,4 @@
- let value = 
+ let value =
  ["..#..#......###.#...#......#..#",
 "...#.....#...#...#..........#..",
 "....#.#...............#.#.#....",
@@ -323,29 +323,25 @@
 "..#..#.....#....##...#..###....",
 ".#...#.........#.#.##.#........"];
 
-
-
 function generate(right, down){
-	
+
 	let index = 0;
 	let total = 0;
-	
+
 	for(let x = down; x < value.length; x += down){
-		
+
 		index += right;
-		
+
 		if(value[x][index % 31] == "#")
 			total++;
-			
+
 	}
-	
-	return total 
+
+	return total
 }
 
-console.log(generate(3,1)*generate(1,1)*generate(5,1)*generate(7,1)*generate(1,2))
+//Part 1
 console.log(generate(3,1))
 
-
-
-
-
+//Part 2
+console.log(generate(3,1)*generate(1,1)*generate(5,1)*generate(7,1)*generate(1,2))

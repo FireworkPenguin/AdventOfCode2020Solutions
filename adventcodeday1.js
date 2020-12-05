@@ -8,19 +8,29 @@ let values = [1933,1963,1924,1832,1949,1826,1681,1548,1881,1973,1558,1979,1803,1
 1762,1792,1896,1907,1976,1886,1971,1998,1912,1967,1857,1951,1925,1921,1518,1593,2004,1999,1571,1923,463,1897,1861,
 1467,1920,1504,2009,1942,1995,1947,1872,1969,1910,1955,1939,1966,1687,1827,675,1520];
 
+function part1(){
+	for (let x of values){
+		for (let y of values){
 
-function start(){
+				if(x + y === 2020){
+					return (x*y)
+				}
+	}}
+
+
+}
+
+function part2 (){
 	for (let x of values){
 		for (let y of values){
 			for (let z of values){
-				
+
 				if(x + y + z === 2020){
-					console.log(x*y*z)
+					return (x*y*z)
 				}
 	}}}
 }
 
-start();
+console.log(part1());
 
-
-
+console.log(part2());

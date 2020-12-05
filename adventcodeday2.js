@@ -5,43 +5,43 @@ function part1(){
 	let total = 0;
 
 	for(x of value){
-		
+
 		let c = 0;
-		
+
 		for(y of x.password){
-		
+
 			if (x.letter == y)
 				c++;
 
 		}
-		
+
 		if(!(c < x.low || c > x.high))
 			total++;
-		
+
 	}
 
-	console.log(total);
+	return total;
 
 }
 
-part1();
+console.log(part1());
 
 
 
 function part2(){
-	
+
 	let total = 0;
 
 	for(x of value){
-		
+
 		if(((x.password[x.low - 1] == x.letter) || (x.password[x.high - 1] == x.letter)) && x.password[x.low - 1] != x.password[x.high - 1])
 			total++;
-		
+
 	}
 
-	console.log(total);
-	
-	
+	return total;
+
+
 }
 
-part2();
+console.log(part2());
