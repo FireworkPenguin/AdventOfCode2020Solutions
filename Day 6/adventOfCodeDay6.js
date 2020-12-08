@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 //Read input File
-const raw = fs.readFileSync('./Input/inputDay6.json', {encoding:'utf8', flag:'r'});
+const raw = fs.readFileSync('./inputDay6.json', {encoding:'utf8', flag:'r'});
 let data = JSON.parse(raw).data;
 
 function getNumUniqueChar(strArr){

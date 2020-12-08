@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 //Read input File
-const raw = fs.readFileSync('./Input/inputDay5.json', {encoding:'utf8', flag:'r'});
+const raw = fs.readFileSync('./inputDay5.json', {encoding:'utf8', flag:'r'});
 let data = JSON.parse(raw).data;
 
 //Function to calculate the row

@@ -1,4 +1,4 @@
-f = open(".\Input\inputDay7.txt", "r")
+f = open(".\inputDay7.txt", "r")
 #print(f.read())
 
 daRulez = {}

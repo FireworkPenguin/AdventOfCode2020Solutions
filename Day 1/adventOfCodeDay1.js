@@ -1,6 +1,6 @@
 const fs = require("fs")
 //Read input File
-const raw = fs.readFileSync('./Input/inputDay1.json', {encoding:'utf8', flag:'r'});
+const raw = fs.readFileSync('./inputDay1.json', {encoding:'utf8', flag:'r'});
 let data = JSON.parse(raw);
 
 let values = data.data

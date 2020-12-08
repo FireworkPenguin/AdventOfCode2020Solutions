@@ -155,7 +155,7 @@ public class adventOfCodeDay8 {
         ArrayList<String> instructions = new ArrayList();
 
         try {
-            File myObj = new File(".\\Input\\inputDay8.txt");
+            File myObj = new File(".\\inputDay8.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 instructions.add(myReader.nextLine());
